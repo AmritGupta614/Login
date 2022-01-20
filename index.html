@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
     </head>
-    <body>
+    <body onload="myfunction()">
+        <div id="loding"></div>
         <div class="from-box">
             <h2>Login Here</h2>
             <form>
@@ -30,6 +31,13 @@
                 <a href="mailto:someone@example.com"><img src="image/5.png"></a>
             </div>
         </div>
+        <script>
+
+            var preloader = document.getElementById('loding')
+            function myfunction(){
+                preloader.style.display = 'none';
+            } 
+        </script>
     </body>
 
 </html>
